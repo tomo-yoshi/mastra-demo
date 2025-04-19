@@ -1,0 +1,28 @@
+{
+  "name": "rag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_OPTIONS='--loader ts-node/esm' ts-node -r dotenv/config src/main.ts",
+    "docker:build": "docker build -t chromadb .",
+    "docker:up": "docker run -d --name chromadb -p 8000:8000 -v $(pwd)/chroma_db:/chroma/chroma chromadb",
+    "docker:down": "docker stop chromadb && docker rm chromadb",
+    "docker:logs": "docker logs -f chromadb"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.1",
+    "@mastra/rag": "^0.0.1",
+    "ai": "^2.2.37",
+    "chromadb": "^1.8.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

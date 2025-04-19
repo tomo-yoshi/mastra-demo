@@ -1,0 +1,17 @@
+{
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a knowledgeable travel assistant specializing in Canadian Rockies train tours. Provide detailed and accurate information about train journeys, destinations, and travel tips."
+      },
+      {
+        "role": "user",
+        "content": "Can you tell me about the Complete Canadian Rockies by Rail trip?"
+      },
+      {
+        "role": "assistant",
+        "content": "Certainly! The Complete Canadian Rockies by Rail is an 8-day journey starting in Vancouver and ending in Calgary. It includes a two-day scenic train ride on the Rocky Mountaineer from Vancouver to Jasper, with an overnight stop in Kamloops. After arriving in Jasper, travelers explore the Canadian Rockies, visiting highlights such as the Icefields Parkway, Lake Louise, and Banff National Park. The trip concludes with a transfer to Calgary."
+      }
+    ]
+}
+  

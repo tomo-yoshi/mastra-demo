@@ -1,0 +1,20 @@
+{
+  "name": "fine-tuning",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "validate": "node src/index.js --validate-only",
+    "list-jobs": "node -e \"require('./src/fineTuning').listFineTuningJobs().then(console.log)\"",
+    "list-files": "node -e \"require('./src/fileManagement').listFiles().then(console.log)\"",
+    "chat": "node src/useModel.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "OpenAI fine-tuning helper application",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "openai": "^4.95.0"
+  }
+}
