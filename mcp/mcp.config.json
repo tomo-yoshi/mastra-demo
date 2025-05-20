@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "security": {
+    "apiKey": "${MCP_API_KEY}"
+  },
+  "logging": {
+    "level": "info"
+  }
+} 
